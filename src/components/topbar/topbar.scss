@@ -1,0 +1,99 @@
+@import "../../global.scss";
+
+.topbar {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: $mainColor;
+  transition: all 1s ease;
+
+  .wrapper {
+    height: inherit;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    .left {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        color: $mainColor;
+        font-size: 40px;
+        font-weight: 700;
+        text-decoration: none;
+        margin-right: 50px;
+      }
+
+      .itemContainor {
+        display: flex;
+        margin-right: 50px;
+
+        @include mobile{
+          display: none;
+        }
+
+        .icon {
+          margin-right: 10px;
+        }
+
+        span {
+          background-color: inherit;
+          font-size: 15px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .right {
+      height: 25px;
+      .hamburger {
+        display: flex;
+        flex-direction: column;
+        width: 30px;
+        height: 100%;
+        justify-content: space-between;
+        cursor: pointer;
+
+        span {
+          background-color: $mainColor;
+          width: 100%;
+          height: 3px;
+          transform-origin: left;
+          transition: all 2s ease;
+        }
+      }
+    }
+  }
+
+  &.active {
+    background-color: $mainColor;
+    color: white;
+
+    .hamburger {
+      overflow-y: hidden;
+      span {
+        background-color: white !important;
+        transform-origin: left;
+
+        &:first-child {
+          transform: rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:last-child {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+
+    .wrapper .left .logo {
+      color: white ;
+    }
+  }
+}

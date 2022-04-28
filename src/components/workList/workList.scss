@@ -1,0 +1,22 @@
+@import "../../global.scss";
+
+.workList {
+    overflow: inherit;
+    font-size: 20px;
+    margin: 0 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+    user-select: none;
+
+    @include mobile{
+      font-size: 16px;
+      padding: 5px 8px;
+      margin: 0;
+    }
+
+    &.active {
+      border-radius: 10px;
+      background-color: $mainColor;
+      color: white;
+    }
+  }
