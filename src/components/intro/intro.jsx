@@ -28,7 +28,7 @@ export default function Intro() {
             Passionate <span ref={textRef}></span>
           </h3>
         </div>
-        <a href="#works">
+        <a href="#projectsInfo">
           <img src="assets/down.png" alt="down arrow"></img>
         </a>
       </div>

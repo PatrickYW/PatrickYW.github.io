@@ -1,4 +1,4 @@
-import "./workList.scss";
+import "./projectList.scss";
 
 export default function WorkList({ id, title, active, setSelected }) {
   return (

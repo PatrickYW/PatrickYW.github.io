@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import React from "react";
-import WorkList from "../workList/workList";
-import "./works.scss";
+import ProjectList from "../projectList/projectList";
+import "./projects.scss";
 import { ArrowBack } from "@material-ui/icons";
 import {
   featuredWorks,
@@ -11,11 +11,11 @@ import {
   gameWorks,
 } from "../../worksData";
 
-export default function Works() {
+export default function Projects() {
   const [selected, setSelected] = useState("featured");
   const [selectedWorkData, setWorkData] = useState(featuredWorks);
   const [selectedWorkDetail, setWorkDetail] = useState(iosWorks[0]);
-  const [activeDetail, setActiveDetail] = useState(true);
+  const [activeDetail, setActiveDetail] = useState(false);
 
   const list = [
     {
@@ -98,12 +98,12 @@ export default function Works() {
   // }, [selectedWorkData]);
 
   return (
-    <div className={"worksInfo " + (activeDetail && "active")} id="worksInfo">
-      <div className="works" id="works">
-        <h1>Works</h1>
+    <div className={"projectsInfo " + (activeDetail && "active")} id="projectsInfo">
+      <div className="projects" id="projects">
+        <h1>Projects</h1>
         <ul>
           {list.map((item) => (
-            <WorkList
+            <ProjectList
               key={item.id}
               id={item.id}
               title={item.title}

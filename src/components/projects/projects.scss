@@ -1,5 +1,5 @@
 @import "../../global.scss";
-.worksInfo {
+.projectsInfo {
   position: relative;
   display: flex;
 
@@ -48,12 +48,12 @@
       display: flex;
       opacity: 1;
     }
-    .works {
+    .projects {
       left: 100vw;
     }
   }
 
-  .works {
+  .projects {
     background-color: white;
     display: flex;
     flex-direction: column;

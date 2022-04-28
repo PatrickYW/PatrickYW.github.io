@@ -1,7 +1,7 @@
 import "./App.scss";
 import Topbar from "./components/topbar/topbar";
 import Intro from "./components/intro/intro";
-import Works from "./components/works/works";
+import Projects from "./components/projects/projects";
 import Contact from "./components/contact/contact";
 import Menu from "./components/menu/menu";
 import { useState } from "react";
@@ -9,10 +9,10 @@ import { useState } from "react";
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const [viewportSize, setViewportSize] = useState({
-    width: 0,
-    height: 0,
-  });
+  // const [viewportSize, setViewportSize] = useState({
+  //   width: 0,
+  //   height: 0,
+  // });
 
 
 
@@ -25,7 +25,7 @@ function App() {
 
       <div className="sections">
         <Intro />
-        <Works />
+        <Projects />
         <Contact />
       </div>
     </div>

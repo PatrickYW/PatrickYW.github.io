@@ -10,8 +10,8 @@ export default function Menu({ menuOpen, setMenuOpen }) {
           </a>
         </li>
         <li>
-          <a href="#works" onClick={() => setMenuOpen(!menuOpen)}>
-            Works
+          <a href="#projectsInfo" onClick={() => setMenuOpen(!menuOpen)}>
+            Projects
           </a>
         </li>
         <li>
