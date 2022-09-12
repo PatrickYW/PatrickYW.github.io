@@ -2,7 +2,7 @@ export const featuredWorks = [
   {
     id: 1,
     title: "Online Shed Design App",
-    img: "img/QikDraw/3DShed.jpg",
+    img: "img/QikDraw/3DShed.png",
     url: "https://www.steelineapp.qikdraw.com/",
   },
   {
@@ -81,7 +81,7 @@ export const websiteWorks = [
   {
     id: 1,
     title: "Online Shed Design App",
-    img: "img/QikDraw/3DShed.jpg",
+    img: "img/QikDraw/3DShed.png",
     url: "https://www.steelineapp.qikdraw.com/",
   },
   {
@@ -131,7 +131,7 @@ export const websiteWorks = [
   {
     id: 5,
     title: "KissAsian.com",
-    img: "img/Web/KissAsian.jpg",
+    img: "img/Web/KissAsian.png",
     describe: {
       "Programming Languages": "HTML5, CSS3, JavaScript, JQuery, Bootstrap",
       "Used Softwares": "Microsoft Visual Studio",
