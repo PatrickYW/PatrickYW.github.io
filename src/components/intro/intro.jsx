@@ -1,17 +1,17 @@
-import "./intro.scss";
-import { useEffect, useRef } from "react";
-import { init } from "ityped";
+import "./intro.scss"
+import { useEffect, useRef } from "react"
+import { init } from "ityped"
 
-export default function Intro() {
-  const textRef = useRef();
+export default function Intro () {
+  const textRef = useRef()
 
   useEffect(() => {
     init(textRef.current, {
       showCursor: true,
       backDelay: 1500,
-      strings: ["Web Developer", "Software Developer"],
-    });
-  }, [textRef]);
+      strings: ["Web Developer", "Technical Support"],
+    })
+  }, [textRef])
 
   return (
     <div className="intro" id="intro">
@@ -33,5 +33,5 @@ export default function Intro() {
         </a>
       </div>
     </div>
-  );
+  )
 }
