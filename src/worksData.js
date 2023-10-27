@@ -13,6 +13,18 @@ export const featuredWorks = [
   },
   {
     id: 3,
+    title: "Australia Materials Management",
+    img: "img/Web/Amm.png",
+    url: "https://amm.patrickwongau.dev/",
+  },
+  {
+    id: 4,
+    title: "Gowrie NSW",
+    img: "img/Web/Gowrie.png",
+    url: "https://www.gowriensw.com.au/",
+  },
+  {
+    id: 5,
     title: "Final Year Project",
     img: "img/finalproject/Researchgui.jpg",
     describe: {
@@ -35,7 +47,7 @@ export const featuredWorks = [
       ],
     },
   },
-];
+]
 
 export const iosWorks = [
   {
@@ -75,7 +87,7 @@ export const iosWorks = [
       ],
     },
   },
-];
+]
 
 export const websiteWorks = [
   {
@@ -147,7 +159,7 @@ export const websiteWorks = [
       ],
     },
   },
-];
+]
 
 export const desktopWorks = [
   {
@@ -223,7 +235,7 @@ export const desktopWorks = [
       ],
     },
   },
-];
+]
 
 export const gameWorks = [
   {
@@ -263,10 +275,10 @@ export const gameWorks = [
     title: "Games Assets",
     img: "img/Games/screenShot2.png",
     describe: {
-      "Used Softwares":"Maya, Unreal Engine, Photoshop",
+      "Used Softwares": "Maya, Unreal Engine, Photoshop",
       "Project Deliverable": [
         "To deliver some game assets which are drawn via Maya.",
       ],
     }
   },
-];
+]
